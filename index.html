@@ -1,0 +1,231 @@
+<!DOCTYPE html><html class="dark" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Romina Navea Rodríguez — Portfolio Editorial</title>
+
+<!-- 1. Enlace al nuevo Tailwind local (Esto es lo que reemplaza a los scripts borrados) -->
+<link rel="stylesheet" href="output.css">
+
+<!-- Tu configuración de Google Fonts intacta -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+
+<!-- Tus estilos CSS personalizados intactos -->
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background-color: #0A0A0A;
+        }
+        .editorial-title {
+            letter-spacing: -0.04em;
+            line-height: 0.9;
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.04);
+        }
+        .tech-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface overflow-x-hidden selection:bg-accent-blue/30">
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-outline/30">
+<div class="max-w-[1440px] mx-auto px-margin-page py-6 flex justify-between items-center">
+<div class="font-bold tracking-tighter text-xl text-primary">
+                Romina Navea Rodríguez
+            </div>
+<nav class="hidden md:flex gap-10 items-center text-[12px] font-bold tracking-[0.2em] uppercase">
+<a class="hover:text-primary transition-colors text-on-surface-variant" href="#sobre-mi">Sobre mí</a>
+<a class="hover:text-primary transition-colors text-on-surface-variant" href="#proyectos">Proyectos</a>
+<a class="hover:text-primary transition-colors text-on-surface-variant" href="#experiencia">Trayectoria</a>
+<a class="hover:text-primary transition-colors text-on-surface-variant" href="#contacto">Contacto</a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col justify-center pt-32 pb-20 px-margin-page scroll-reveal active">
+<div class="max-w-[1440px] mx-auto w-full grid grid-cols-12 gap-8 lg:gap-16">
+<div class="col-span-12 lg:col-span-7 flex flex-col justify-center">
+<p class="text-[12px] font-bold tracking-[0.4em] uppercase mb-6 text-on-surface-variant">Data Analyst</p>
+<h1 class="editorial-title text-[clamp(3.5rem,10vw,7.5rem)] font-extrabold uppercase mb-10 text-primary">
+                        Romina Navea <br> Rodríguez
+                    </h1>
+<div class="max-w-xl space-y-8">
+<p class="text-2xl md:text-3xl font-light leading-snug text-on-surface">
+                            Transformo datos en conocimiento claro para tomar mejores decisiones.
+                        </p>
+<p class="text-on-surface-variant text-lg leading-relaxed font-light italic opacity-80">
+                            Una evolución estratégica desde el periodismo y la comunicación hacia el análisis de datos de alto impacto.
+                        </p>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 flex items-center">
+<div class="w-full aspect-[4/5] bg-surface grayscale transition-all duration-1000 overflow-hidden border border-outline/50 relative">
+<img class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity" data-alt="Portrait of Romina Navea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvviCjaEKM2292KX5O7XFt_hj3usODa7zUYWKO5lp3jQjbuYH80y_0gwvS_05Y8mUIAurnyRbZO4DcPpPR8dBUC5tCtqeYuIAIyeGmVmCj7HI9KU1BNm8k7pdLID3ztwyg7dO2oagawNHDQqRxp1aDsqS9gTXdj6gTgiN-nYoLR_eUiKCGiKYoZZMwnRyaaPju2NcUvv56M8Gv82UbetHeFt8O_k_OrlHI03o-tofrRz5ayvCBAOIziQlRsUS2QYX8vVk0-IJ-A5k1zg">
+<div class="absolute inset-0 ring-1 ring-inset ring-white/10 pointer-events-none"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap px-margin-page bg-surface-warm scroll-reveal active" id="sobre-mi">
+<div class="max-w-4xl mx-auto">
+<span class="text-[11px] font-bold tracking-[0.3em] uppercase text-on-surface-variant block mb-6">Sobre mí</span>
+<h2 class="editorial-title text-5xl md:text-7xl font-bold uppercase mb-16 text-primary">De las comunicaciones<br>a los Datos</h2>
+<div class="space-y-12 mb-20">
+<p class="text-xl md:text-2xl font-light leading-relaxed text-on-surface/90">Data Analyst Junior con más de 10 años en comunicación estratégica y medios digitales. Formada en SQL, Python, Power BI y Excel avanzado. Mi diferencial: análisis técnico + comunicación efectiva — convierto datos complejos en insights claros y accionables.</p>
+<p class="text-on-surface-variant text-xl leading-relaxed font-light italic">"Creo firmemente que el conocimiento es para tod@s, y que comunicarlo bien es lo que realmente lo hace útil."</p>
+</div>
+<div class="flex flex-wrap items-center gap-y-6 gap-x-4 md:gap-x-6 text-[12px] font-bold uppercase tracking-widest text-on-surface-variant"><div class="flex items-center gap-3 text-on-surface px-4 py-2 bg-white/5 border border-white/10">PERIODISMO</div><span class="text-outline">→</span><div class="flex items-center gap-3 text-on-surface px-4 py-2 bg-white/5 border border-white/10">COMUNICACIÓN ESTRATÉGICA</div><span class="text-outline">→</span><div class="flex items-center gap-3 text-on-surface px-4 py-2 bg-white/5 border border-white/10">MARKETING DIGITAL &amp; MÉTRICAS</div><span class="text-outline">→</span><div class="flex items-center gap-3 text-on-surface px-4 py-2 bg-white/5 border border-white/10">ANÁLISIS DE DATOS</div><span class="text-outline">→</span><div class="flex items-center gap-3 text-on-surface px-4 py-2 bg-accent-green/10 border border-accent-green/30 text-accent-green">BUSINESS INTELLIGENCE</div></div>
+</div>
+</section>
+<!-- Projects Gallery -->
+<section class="py-section-gap px-margin-page scroll-reveal active" id="proyectos">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-24 gap-12 border-b border-outline/30 pb-12">
+<div>
+<span class="text-[11px] font-bold tracking-[0.3em] uppercase text-on-surface-variant block mb-4">Portfolio</span>
+<h2 class="editorial-title text-5xl md:text-7xl font-bold uppercase text-primary">FORMACIÓN <br>TÉCNICA</h2>
+</div>
+
+</div>
+<div class="grid grid-cols-1 gap-24"><!-- Card 1 --><div class="grid grid-cols-12 gap-8 items-center group"><div class="col-span-12 lg:col-span-5 mb-8 lg:mb-0"><div class="aspect-[16/9] bg-surface flex items-center justify-center border border-outline relative overflow-hidden group-hover:border-accent-blue/50 transition-colors"><div class="absolute inset-0 bg-accent-blue/5"></div><span class="text-on-surface font-bold tracking-[0.4em] uppercase text-center px-8 z-10">FACTORÍA F5 / FUNDACIÓN DON BOSCO</span></div></div><div class="col-span-12 lg:col-span-7 lg:pl-12"><span class="text-[11px] font-bold tracking-widest uppercase text-accent-blue mb-4 block">Bootcamp Data Analyst (600h) | Factoría F5 · Fundación Don Bosco</span><h3 class="text-3xl md:text-4xl font-bold mb-6 text-primary">abril – septiembre 2026 (en curso)</h3><p class="text-lg font-light text-on-surface-variant leading-relaxed max-w-2xl">Presencial, Málaga. Stack: SQL · Python · Power BI · Excel · Estadística · ML básico. Formación intensiva en análisis de datos, visualización y modelado predictivo.</p></div></div><!-- Card 2 --><div class="grid grid-cols-12 gap-8 items-center group"><div class="col-span-12 lg:col-span-5 lg:order-2 mb-8 lg:mb-0"><div class="aspect-[16/9] bg-surface flex items-center justify-center border border-outline relative overflow-hidden group-hover:border-accent-green/50 transition-colors"><div class="absolute inset-0 bg-accent-green/5"></div><span class="text-on-surface font-bold tracking-[0.4em] uppercase text-center px-8 z-10">UNIVERSIDAD DE MÁLAGA</span></div></div><div class="col-span-12 lg:col-span-7 lg:order-1 lg:pr-12"><span class="text-[11px] font-bold tracking-widest uppercase text-accent-green mb-4 block">Máster en Dirección Estratégica e Innovación en Comunicación</span><h3 class="text-3xl md:text-4xl font-bold mb-6 text-primary">2024</h3><p class="text-lg font-light text-on-surface-variant leading-relaxed max-w-2xl">Málaga, España. Especialización en la gestión estratégica de la comunicación y procesos de innovación digital.</p></div></div><!-- Card 3 --><div class="grid grid-cols-12 gap-8 items-center group"><div class="col-span-12 lg:col-span-5 mb-8 lg:mb-0"><div class="aspect-[16/9] bg-surface flex items-center justify-center border border-outline relative overflow-hidden group-hover:border-primary/50 transition-colors"><div class="absolute inset-0 bg-white/5"></div><span class="text-on-surface font-bold tracking-[0.4em] uppercase text-center px-8 z-10">42 MÁLAGA</span></div></div><div class="col-span-12 lg:col-span-7 lg:pl-12"><span class="text-[11px] font-bold tracking-widest uppercase text-on-surface-variant mb-4 block">Campus 42 · Fundación Telefónica</span><h3 class="text-3xl md:text-4xl font-bold mb-6 text-primary">2024 – 2025</h3><p class="text-lg font-light text-on-surface-variant leading-relaxed max-w-2xl">Presencial, Málaga. Lógica computacional y programación en C. Estructuras de datos y algoritmos. Administración Linux. Metodología peer-to-peer.</p></div></div><!-- Card 4 --><div class="grid grid-cols-12 gap-8 items-center group"><div class="col-span-12 lg:col-span-5 lg:order-2 mb-8 lg:mb-0"><div class="aspect-[16/9] bg-surface flex items-center justify-center border border-outline relative overflow-hidden group-hover:border-accent-blue/50 transition-colors"><div class="absolute inset-0 bg-accent-blue/5"></div><span class="text-on-surface font-bold tracking-[0.4em] uppercase text-center px-8 z-10">MAUDE STUDIO</span></div></div><div class="col-span-12 lg:col-span-7 lg:order-1 lg:pr-12"><span class="text-[11px] font-bold tracking-widest uppercase text-accent-blue mb-4 block">Programa Generación Digital — Agentes del Cambio</span><h3 class="text-3xl md:text-4xl font-bold mb-6 text-primary">2026</h3><p class="text-lg font-light text-on-surface-variant leading-relaxed max-w-2xl">375 horas. Modalidad mixta, Málaga · Financiado por la UE — NextGenerationEU. Gestión empresarial y transformación digital de pymes.</p></div></div><!-- Card 5 --><div class="grid grid-cols-12 gap-8 items-center group"><div class="col-span-12 lg:col-span-5 mb-8 lg:mb-0"><div class="aspect-[16/9] bg-surface flex items-center justify-center border border-outline relative overflow-hidden group-hover:border-accent-green/50 transition-colors"><div class="absolute inset-0 bg-accent-green/5"></div><span class="text-on-surface font-bold tracking-[0.4em] uppercase text-center px-8 z-10">GOOGLE / COURSERA</span></div></div><div class="col-span-12 lg:col-span-7 lg:pl-12"><span class="text-[11px] font-bold tracking-widest uppercase text-accent-green mb-4 block">Google Cybersecurity Certificate</span><h3 class="text-3xl md:text-4xl font-bold mb-6 text-primary">2026 (en curso)</h3><p class="text-lg font-light text-on-surface-variant leading-relaxed max-w-2xl">Fundamentos de ciberseguridad, protección de redes y respuesta ante incidentes.</p></div></div><!-- Card 6 --><div class="grid grid-cols-12 gap-8 items-center group"><div class="col-span-12 lg:col-span-5 lg:order-2 mb-8 lg:mb-0"><div class="aspect-[16/9] bg-surface flex items-center justify-center border border-outline relative overflow-hidden group-hover:border-primary/50 transition-colors"><div class="absolute inset-0 bg-white/5"></div><span class="text-on-surface font-bold tracking-[0.4em] uppercase text-center px-8 z-10">UCN CHILE</span></div></div><div class="col-span-12 lg:col-span-7 lg:order-1 lg:pr-12"><span class="text-[11px] font-bold tracking-widest uppercase text-on-surface-variant mb-4 block">Licenciada en Ciencias de la Comunicación</span><h3 class="text-3xl md:text-4xl font-bold mb-6 text-primary">2009 – 2013</h3><p class="text-lg font-light text-on-surface-variant leading-relaxed max-w-2xl">Universidad Católica del Norte · Chile. Formación integral en periodismo, comunicación corporativa y análisis de medios.</p></div></div></div>
+</div>
+</section>
+<!-- Technical Stack -->
+<section class="py-section-gap px-margin-page bg-surface scroll-reveal active" id="skills">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-20">
+<span class="text-[11px] font-bold tracking-[0.3em] uppercase text-on-surface-variant block mb-4">Competencias</span>
+<h2 class="editorial-title text-4xl md:text-6xl font-bold uppercase mb-8 text-primary">HERRAMIENTAS Y TECNOLOGÍAS</h2>
+<p class="text-on-surface-variant font-light leading-relaxed max-w-2xl text-lg">
+                        Herramientas seleccionadas para la extracción de valor y la comunicación efectiva de hallazgos.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6"><!-- Análisis de datos --><div class="glass-card p-10 flex flex-col h-full"><h4 class="font-bold uppercase tracking-[0.2em] text-[11px] text-accent-blue mb-10 border-b border-outline/40 pb-6">Análisis de datos</h4><div class="space-y-6 flex-grow"><div class="flex items-center justify-between group/item"><span class="text-on-surface font-light text-[15px]">SQL · Python · Pandas</span><div class="tech-dot bg-accent-blue"></div></div><div class="flex items-center justify-between group/item"><span class="text-on-surface font-light text-[15px]">NumPy · Excel avanzado</span><div class="tech-dot bg-accent-blue"></div></div><div class="flex items-center justify-between group/item"><span class="text-on-surface font-light text-[15px]">EDA</span><div class="tech-dot bg-accent-blue"></div></div></div></div><!-- Visualización & BI --><div class="glass-card p-10 flex flex-col h-full"><h4 class="font-bold uppercase tracking-[0.2em] text-[11px] text-accent-green mb-10 border-b border-outline/40 pb-6">Visualización &amp; BI</h4><div class="space-y-6 flex-grow"><div class="flex items-center justify-between group/item"><span class="text-on-surface font-light text-[15px]">Power BI · Tableau</span><div class="tech-dot bg-accent-green"></div></div><div class="flex items-center justify-between group/item"><span class="text-on-surface font-light text-[15px]">Google Analytics</span><div class="tech-dot bg-accent-green"></div></div></div></div><!-- IT & Desarrollo --><div class="glass-card p-10 flex flex-col h-full"><h4 class="font-bold uppercase tracking-[0.2em] text-[11px] text-on-surface-variant mb-10 border-b border-outline/40 pb-6">IT &amp; Desarrollo</h4><div class="space-y-6 flex-grow"><div class="text-on-surface font-light text-[15px]">Linux · Git/GitHub</div><div class="text-on-surface font-light text-[15px]">C · Ciberseguridad</div></div></div><!-- Analytics digital --><div class="glass-card p-10 flex flex-col h-full"><h4 class="font-bold uppercase tracking-[0.2em] text-[11px] text-on-surface-variant mb-10 border-b border-outline/40 pb-6">Analytics digital</h4><div class="space-y-6 flex-grow"><div class="text-on-surface font-light text-[15px]">SEO/SEM · Hootsuite</div><div class="text-on-surface font-light text-[15px]">Metricool · WordPress</div></div></div><!-- Transformación Digital --><div class="glass-card p-10 flex flex-col h-full"><h4 class="font-bold uppercase tracking-[0.2em] text-[11px] text-on-surface-variant mb-10 border-b border-outline/40 pb-6">Transformación Digital</h4><div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Business Intelligence</span><span class="px-4 py-2 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Big Data</span><span class="px-4 py-2 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Cloud</span><span class="px-4 py-2 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">CRM/ERP</span><span class="px-4 py-2 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">KitDigital</span><span class="px-4 py-2 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Metodologías ágiles</span></div></div></div>
+</div>
+</section><section class="py-16 px-margin-page bg-surface-warm scroll-reveal active"><div class="max-w-[1440px] mx-auto"><div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start"><div class="lg:col-span-4"><span class="text-[11px] font-bold tracking-[0.3em] uppercase text-on-surface-variant block mb-4">Soft Skills</span><h2 class="editorial-title text-4xl font-bold uppercase text-primary">COMPETENCIAS <br>TRANSVERSALES</h2></div><div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6"><ul class="space-y-4 text-on-surface-variant font-light text-lg"><li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-accent-blue rounded-full"></span>EDA</li><li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-accent-blue rounded-full"></span>Data storytelling</li><li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-accent-blue rounded-full"></span>Interpretación de KPIs</li><li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-accent-blue rounded-full"></span>Comunicación de insights</li></ul><ul class="space-y-4 text-on-surface-variant font-light text-lg"><li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>Pensamiento crítico orientado al negocio</li><li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>Resolución de problemas por descomposición</li><li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>Aprendizaje autónomo rápido</li><li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-accent-green rounded-full"></span>Trabajo colaborativo (peer-to-peer)</li></ul><div class="col-span-full pt-8 border-t border-outline/30 mt-4"><p class="text-[11px] font-bold tracking-widest uppercase text-on-surface-variant mb-2">Idiomas</p><p class="text-lg font-light text-on-surface">Español (nativo) · Inglés (lectura técnica profesional)</p></div></div></div></div></section>
+<!-- Experience Timeline -->
+<section class="py-section-gap px-margin-page scroll-reveal active" id="experiencia">
+<div class="max-w-4xl mx-auto">
+<span class="text-[11px] font-bold tracking-[0.3em] uppercase text-on-surface-variant block mb-6">Trayectoria</span>
+<h2 class="editorial-title text-5xl md:text-7xl font-bold uppercase mb-20 text-primary">Experiencia <br>&amp; Educación</h2>
+<div class="space-y-16"><div class="grid grid-cols-1 md:grid-cols-12 gap-6 border-l border-outline/30 pl-8 relative"><div class="absolute w-2 h-2 bg-accent-blue -left-[4.5px] top-2"></div><div class="md:col-span-3 text-[12px] font-bold tracking-widest text-accent-blue uppercase pt-1">2026 (EN CURSO)</div><div class="md:col-span-9"><h4 class="text-2xl font-bold uppercase mb-2 text-primary">Bootcamp Data Analyst</h4><p class="text-on-surface-variant font-light mb-4 italic text-lg">Factoría F5 / Fundación Don Bosco · 600h · Málaga</p></div></div><div class="grid grid-cols-1 md:grid-cols-12 gap-6 border-l border-outline/30 pl-8 relative"><div class="absolute w-2 h-2 bg-accent-green -left-[4.5px] top-2"></div><div class="md:col-span-3 text-[12px] font-bold tracking-widest text-accent-green uppercase pt-1">2026 (EN CURSO)</div><div class="md:col-span-9"><h4 class="text-2xl font-bold uppercase mb-2 text-primary">Google Cybersecurity Certificate</h4><p class="text-on-surface-variant font-light mb-4 italic text-lg">Google / Coursera</p></div></div><div class="grid grid-cols-1 md:grid-cols-12 gap-6 border-l border-outline/30 pl-8 relative"><div class="absolute w-2 h-2 bg-outline -left-[4.5px] top-2"></div><div class="md:col-span-3 text-[12px] font-bold tracking-widest text-on-surface-variant uppercase pt-1">ENE–ABR 2026</div><div class="md:col-span-9"><h4 class="text-2xl font-bold uppercase mb-2 text-primary">Programa Generación Digital — Agentes del Cambio</h4><p class="text-on-surface-variant font-light mb-4 italic text-lg">Maude Studio · 375h · NextGenerationEU</p></div></div><div class="grid grid-cols-1 md:grid-cols-12 gap-6 border-l border-outline/30 pl-8 relative"><div class="absolute w-2 h-2 bg-outline -left-[4.5px] top-2"></div><div class="md:col-span-3 text-[12px] font-bold tracking-widest text-on-surface-variant uppercase pt-1">2024–2025</div><div class="md:col-span-9"><h4 class="text-2xl font-bold uppercase mb-2 text-primary">Campus 42</h4><p class="text-on-surface-variant font-light mb-4 italic text-lg">Fundación Telefónica · Málaga</p></div></div><div class="grid grid-cols-1 md:grid-cols-12 gap-6 border-l border-outline/30 pl-8 relative"><div class="absolute w-2 h-2 bg-outline -left-[4.5px] top-2"></div><div class="md:col-span-3 text-[12px] font-bold tracking-widest text-on-surface-variant uppercase pt-1">2024</div><div class="md:col-span-9"><h4 class="text-2xl font-bold uppercase mb-2 text-primary">Máster en Dirección Estratégica e Innovación en Comunicación</h4><p class="text-on-surface-variant font-light mb-4 italic text-lg">Universidad de Málaga</p></div></div><div class="grid grid-cols-1 md:grid-cols-12 gap-6 border-l border-outline/30 pl-8 relative"><div class="absolute w-2 h-2 bg-outline -left-[4.5px] top-2"></div><div class="md:col-span-3 text-[12px] font-bold tracking-widest text-on-surface-variant uppercase pt-1">2020–2023</div><div class="md:col-span-9"><h4 class="text-2xl font-bold uppercase mb-2 text-primary">Social Media &amp; Analista Digital</h4><p class="text-on-surface-variant font-light mb-4 italic text-lg">Diario El Día · La Serena, Chile</p></div></div><div class="grid grid-cols-1 md:grid-cols-12 gap-6 border-l border-outline/30 pl-8 relative"><div class="absolute w-2 h-2 bg-outline -left-[4.5px] top-2"></div><div class="md:col-span-3 text-[12px] font-bold tracking-widest text-on-surface-variant uppercase pt-1">2023</div><div class="md:col-span-9"><h4 class="text-2xl font-bold uppercase mb-2 text-primary">Periodista Proyectos ACUYMIN y ACUYMINAGRO</h4><p class="text-on-surface-variant font-light mb-4 italic text-lg">Universidad Católica del Norte · Chile</p></div></div><div class="grid grid-cols-1 md:grid-cols-12 gap-6 border-l border-outline/30 pl-8 relative"><div class="absolute w-2 h-2 bg-outline -left-[4.5px] top-2"></div><div class="md:col-span-3 text-[12px] font-bold tracking-widest text-on-surface-variant uppercase pt-1">2009–2013</div><div class="md:col-span-9"><h4 class="text-2xl font-bold uppercase mb-2 text-primary">Licenciada en Ciencias de la Comunicación</h4><p class="text-on-surface-variant font-light mb-4 italic text-lg">Universidad Católica del Norte · Chile</p></div></div></div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-margin-page bg-on-surface text-background scroll-reveal active" id="contacto">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20">
+<div class="lg:col-span-5">
+<h2 class="editorial-title text-6xl md:text-8xl font-bold uppercase mb-12">¿Hablamos?</h2>
+<p class="text-xl font-light leading-relaxed mb-16 opacity-80">Disponible para oportunidades como Data Analyst Junior en España. Abierta a prácticas, proyectos y colaboraciones en equipos de datos.<br><span class="text-sm block mt-4 opacity-60">Residente en España · Permiso de trabajo vigente · Disponible para incorporación inmediata</span></p>
+<div class="space-y-12">
+<a class="block group" href="mailto:romina.navea.rod@gmail.com">
+<span class="text-[11px] font-bold tracking-widest uppercase block mb-3 opacity-60">Email</span>
+<span class="text-2xl md:text-3xl font-light border-b border-background/20 group-hover:border-background transition-all pb-2">romina.navea.rod@gmail.com</span>
+</a>
+<a class="block group" href="https://www.linkedin.com/in/romina-navearod/" target="_blank">
+<span class="text-[11px] font-bold tracking-widest uppercase block mb-3 opacity-60">LinkedIn</span>
+<span class="text-2xl md:text-3xl font-light border-b border-background/20 group-hover:border-background transition-all pb-2">linkedin.com/in/romina-navearod/</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-center">
+<form class="space-y-12 w-full">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="relative">
+<label class="text-[10px] font-bold tracking-[0.2em] uppercase block mb-4 opacity-60">Nombre</label>
+<input class="w-full bg-transparent border-b border-background/30 focus:border-background outline-none transition-colors py-3 font-light text-lg px-0" placeholder="Tu nombre" type="text">
+</div>
+<div class="relative">
+<label class="text-[10px] font-bold tracking-[0.2em] uppercase block mb-4 opacity-60">Email</label>
+<input class="w-full bg-transparent border-b border-background/30 focus:border-background outline-none transition-colors py-3 font-light text-lg px-0" placeholder="tu@email.com" type="email">
+</div>
+</div>
+<div class="relative">
+<label class="text-[10px] font-bold tracking-[0.2em] uppercase block mb-4 opacity-60">Mensaje</label>
+<textarea class="w-full bg-transparent border-b border-background/30 focus:border-background outline-none transition-colors py-3 font-light text-lg resize-none px-0" placeholder="¿En qué puedo ayudarte?" rows="4"></textarea>
+</div>
+<button class="w-full md:w-auto px-16 py-6 bg-background text-on-surface font-bold uppercase tracking-[0.3em] text-[12px] hover:bg-black hover:scale-[1.02] transition-all duration-300">
+                            Enviar Consulta
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="py-16 px-margin-page bg-background border-t border-outline/30">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+<div class="text-xl font-bold uppercase tracking-tighter text-primary">
+                Romina Navea Rodríguez
+            </div>
+<div class="text-[12px] font-medium text-on-surface-variant uppercase tracking-[0.2em]">
+                © 2024 — Portfolio Editorial
+            </div>
+<div class="flex gap-10 text-[11px] font-bold uppercase tracking-widest">
+<a class="hover:text-primary transition-colors text-on-surface-variant" href="https://github.com/rnavea-r" target="_blank">Github</a>
+<a class="hover:text-primary transition-colors text-on-surface-variant" href="https://www.linkedin.com/in/romina-navearod/" target="_blank">LinkedIn</a>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.scroll-reveal').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Smooth Scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body></html>
